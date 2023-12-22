@@ -1,5 +1,5 @@
 .friendList {
-   margin: 0 auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   padding: 4px 8px;
@@ -21,21 +21,29 @@
 }
 
 .statusOnline {
-  background-color: #008000; 
+  background-color: #008000;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  margin-left: 10px;
 }
 
 .statusOffline {
-  background-color: #ff0000; 
+  background-color: #ff0000;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  margin-left: 10px;
 }
 
 .avatar {
-    width: 50px;
+  width: 50px;
   margin-bottom: 0;
   margin-right: 8px;
 }
 
 .name {
-   color: #050505;
+  color: #050505;
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 600;
