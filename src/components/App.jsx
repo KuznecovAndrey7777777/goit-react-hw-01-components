@@ -4,8 +4,8 @@ import Statistics from './Statistics/Statistics';
 import stats from './data';
 import FriendList from './FriendList/FriendList';
 import friends from './friends.json';
-// import Transactions from './Transactions/Transactions';
-// import transaction from './transactions.json';
+import Transactions from './Transactions/Transactions';
+import transaction from './transactions.json';
 
 
 export default function App() {
@@ -20,8 +20,7 @@ export default function App() {
       />
       <Statistics stats={stats} />
       <FriendList friends={friends} />
+      <Transactions items={transaction} />
     </div>
   );
 }
-
-/* <Transactions items={transaction} /> */

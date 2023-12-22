@@ -1,0 +1,29 @@
+.transactionHistory {
+  width: 300px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:20px;
+  width: 50%;
+  border-collapse: collapse;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.transactionHistory thead {
+  background-color: #00bcd4;
+  color: white;
+}
+
+.transactionHistory th,
+.transactionHistory td {
+  border: 1px solid #eaeaea;
+  padding: 10px;
+}
+
+.transactionHistory tbody tr {
+  background-color: #f3f3f3;
+}
+
+.transactionHistory tbody tr:nth-of-type(even) {
+  background-color: #ffffff;
+}
