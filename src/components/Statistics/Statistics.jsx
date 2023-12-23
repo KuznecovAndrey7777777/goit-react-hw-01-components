@@ -4,8 +4,8 @@ import styles from './Statistics.module.css';
 const Statistics = function ({ title, stats }) {
   return (
     <section className={styles.statistics}>
-      <h2 className="title">Upload stats</h2>
-
+      {title && <h2 className={styles.title}>{title}</h2>}{' '}
+      {/* умовний рендеринг */ 'Upload stats'}
       <ul className={styles.statList}>
         {stats.map(({ id, label, percentage }) => {
           return (
@@ -21,8 +21,7 @@ const Statistics = function ({ title, stats }) {
 };
 
 Statistics.propTypes = {
-  title: PropTypes.string,
-  stats: PropTypes.arrayOf(
+    stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
       label: PropTypes.string.isRequired,
